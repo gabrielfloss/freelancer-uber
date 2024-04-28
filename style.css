@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 33%, rgba(109, 109, 109, 1) 90%, rgba(255, 255, 255, 1) 99%);
+}
+
+ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 100px;
+
+
+    img {
+        cursor: pointer;
+        width: 80px;
+        height: 80px
+    }
+
+    ;
+
+    a {
+        cursor: pointer;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    a:hover {
+        border-bottom: 2px solid black;
+
+    }
+
+    a:active {
+        opacity: 0.5;
+    }
+
+
+}
+
+.main-information {
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    img {
+        border-radius: 360px;
+        border: 5px solid #2070EB;
+    }
+
+    h1 {
+        color: white;
+
+    }
+
+    span {
+        color: #2070EB
+    }
+
+}
+
+.sobre-information {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 300px;
+    color: white;
+    gap: 50px;
+
+    a {
+        color: #2070EB;
+        text-decoration: solid;
+        transition: 1s;
+    }
+
+    a:hover {
+        color: #00ccff;
+    }
+
+}
+
+.iphone-secao {
+    background-color: white;
+    background: opacity 0.5;
+
+    display: flex;
+    justify-content: center;
+
+    button{
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 400px;
+        height: 60px;
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        transition: 1s;
+       
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+}
+
+.botao-e-para {
+    margin-top: 200px;
+    margin-left: 60px;
+    gap: 20px;
+
+
+}
+
+.mais-information {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.zap {
+    
+    #zap {
+        width: 60px;
+        cursor: pointer;
+    };
+    img{
+        height: 60px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+#Mais{
+    color: white;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    p{
+        font-size: 80px;
+        font-weight: bold;
+    }
+    a{
+        font-weight: bold;
+    }
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    p{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    img{
+        width: 16px;
+    }
+
+}
+
+.fale-conosco{
+    
+    background: url("./img/gif\ background\ foda.gif");
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    position: fixed;
+    border-radius: 10px;
+    top: 20%;
+    left: -300px;
+    transition: left 1s ease-in-out;
+    button{
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 270px;
+        height: 60px;
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        transition: 1s;
+       
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+input{
+    height: 40px;
+    border-radius: 5px ;
+    border: 1px solid black;
+    padding-left: 10px;
+    outline-color: #c2c2c2 ;
+
+}
+
+textarea{
+   height: 200px;
+   width: 270px;
+    border-radius: 5px ;
+    border: 1px solid black;
+    padding-left: 10px;
+    outline-color: #c2c2c2 ;
+}
+
+.mask {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    
+}
+
+/*
+Inicial
+top: 20%
+left: -300px
+
+final 
+   top: 20%;
+    left: 50%;
+    transform: translateX(-60%);
+*/
+
+@media (max-width: 740px) {
+    ul{
+        font-size: 10px;
+        font-weight: 100;
+        display: flex;
+        gap: 20px;
+    }
+    .main-information {
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+        margin-left: 30px ;
+        img{
+            width: 150px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    .iphone-secao{
+        button{
+            width: 200px;
+        }
+     
+    }
+    
+
+
+}
+
+
+@media (max-width: 540px) {
+    ul{ 
+       
+        
+        img{
+            display: flex;
+        }
+       
+        
+    }
+   .iphone-secao{
+    img{
+        position: relative;
+    }
+    h2{
+        font-size: 15px;
+    }
+    button{
+        width: 150px;
+        position: relative;
+    }
+   }
+   .mais-information{
+     display: none;
+   }
+
+
+}
+
+@media (max-width: 471px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iphone-secao{
+        img{
+            z-index: 0;
+        }
+        button{
+            width: 90px;
+            height: 100px;
+        }
+    }
+
+    .contato{
+       margin-bottom: 160px  ;
+       display: flex;
+       flex-direction: column;
+    }
+    .fale-conosco{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 200px;
+        position: fixed;
+        textarea{
+            width: 100px;
+        }
+        button{
+            width: 100px;
+        }
+    }
+   
+    
+}
+
+
+@media (max-width: 420px) {
+    .main-information{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100px;
+        }
+       
+    }
+    .sobre-information{
+        h2{
+            padding-left: 90px;
+            margin: 50px;
+            font: 100;
+            font-size: smaller;
+            font-weight: 100;
+        }
+    }
+    .iphone-secao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+             width:   150px ;
+        } 
+        h2{
+           padding-left: 30px;
+        }
+        button{
+            margin-top: 100px;
+           margin-bottom: 100px;
+           margin-right: 60px;
+           width: 300px;
+        }
+    }
+}
