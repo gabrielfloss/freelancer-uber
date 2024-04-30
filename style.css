@@ -302,9 +302,7 @@ final
         
     }
    .iphone-secao{
-    img{
-        position: relative;
-    }
+   
     h2{
         font-size: 15px;
     }
@@ -327,9 +325,7 @@ final
     }
 
     .iphone-secao{
-        img{
-            z-index: 0;
-        }
+       
         button{
             width: 90px;
             height: 100px;
@@ -372,29 +368,39 @@ final
     }
     .sobre-information{
         h2{
-            padding-left: 90px;
-            margin: 50px;
-            font: 100;
-            font-size: smaller;
-            font-weight: 100;
+          margin-left: 30px;
         }
     }
     .iphone-secao{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100vw;
+        display: contents;
         img{
-             width:   150px ;
-        } 
-        h2{
-           padding-left: 30px;
+           display: none;
+       } 
+       h2{
+          
+          color: white;
+          font-size: 11px;
+          
+          
+       }
+       button{
+         margin-right: 50px;
+         margin-bottom: 50px;
+          
+       }
+       .contato{
+        a{
+            margin: 300px;
+            font-size: 10px;
         }
-        button{
-            margin-top: 100px;
-           margin-bottom: 100px;
-           margin-right: 60px;
-           width: 300px;
+        #email{
+            display: none;
         }
+       }
+       
+      
     }
+    
+   
 }
